@@ -1,0 +1,421 @@
+506 [    pgoapi] [ INFO] pgoapi v1.1.7 - Copyright (c) 2016 tjado <https://github.com/tejado>
+706 [ utilities] [ INFO] Location for '[Redacted],[Redacted]' found: [Redacted]
+706 [ utilities] [ INFO] Coordinates (lat/long/alt) for location: [Redacted] [Redacted] 0.0
+706 [    pgoapi] [DEBUG] Set Position - Lat: [Redacted] Long: [Redacted] Alt: 0.0
+707 [    pgoapi] [DEBUG] Auth provider: ptc
+707 [  auth_ptc] [ INFO] PTC User Login for: [Redacted]
+715 [connectionpool] [ INFO] Starting new HTTPS connection (1): sso.pokemon.com
+945 [connectionpool] [DEBUG] "GET /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 200 104
+049 [connectionpool] [DEBUG] "POST /sso/login?service=https%3A%2F%2Fsso.pokemon.com%2Fsso%2Foauth2.0%2FcallbackAuthorize HTTP/1.1" 302 0
+147 [connectionpool] [DEBUG] "GET /sso/oauth2.0/callbackAuthorize?ticket=ST-23950672-fX6XPc6GHnn0ERyd4sNA-sso.pokemon.com HTTP/1.1" 500 None
+148 [  auth_ptc] [ INFO] PTC User Login successful.
+148 [      auth] [DEBUG] No Access Token available!
+148 [  auth_ptc] [ INFO] Request PTC Access Token...
+249 [connectionpool] [DEBUG] "POST /sso/oauth2.0/accessToken HTTP/1.1" 200 106
+250 [  auth_ptc] [ INFO] PTC Access Token successfully retrieved.
+250 [  auth_ptc] [DEBUG] PTC Access Token: TGT-23885427-gPiTkX9K1g6B...
+269 [    pgoapi] [ INFO] Creating a new direct request...
+269 [    pgoapi] [ INFO] Adding 'GET_MAP_OBJECTS' to RPC request including arguments
+269 [    pgoapi] [DEBUG] Arguments of 'GET_MAP_OBJECTS': 
+{'latitude': [Redacted], 'since_timestamp_ms': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], 'cell_id': [[Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L, [Redacted]L], 'longitude': [Redacted]}
+270 [   rpc_api] [DEBUG] Generated new random RPC Request id: 456160726639497600
+270 [    pgoapi] [ INFO] Execution of RPC
+270 [   rpc_api] [DEBUG] Generating main RPC request...
+270 [   rpc_api] [DEBUG] Incremented RPC Request ID: 456160726639497601
+270 [   rpc_api] [DEBUG] Generating sub RPC requests...
+283 [   rpc_api] [DEBUG] Subrequest class: POGOProtos.Networking.Requests.Messages_pb2.GetMapObjectsMessage
+284 [   rpc_api] [DEBUG] Found list: since_timestamp_ms - trying as repeated
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+284 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+285 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+288 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+289 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+290 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+291 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+292 [   rpc_api] [DEBUG] Found list: cell_id - trying as repeated
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+293 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+294 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+297 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+297 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+297 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+297 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+297 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+298 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+299 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+300 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+301 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+302 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+302 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+302 [   rpc_api] [DEBUG] No Session Ticket found - using OAUTH Access Token
+302 [      auth] [DEBUG] Access Token still valid for further 02:58:00 hours (1471137446 < 1471148126)
+302 [  auth_ptc] [DEBUG] Using cached PTC Access Token
+303 [   rpc_api] [DEBUG] Generated protobuf request: 
+status_code: 2
+request_id: 456160726639497601
+requests {
+  request_type: GET_MAP_OBJECTS
+  request_message: "\n\300\004\200\200\200\200\304\201\304\344L\200\200\200\200\314\201\304\344L\200\200\200\200\324\201\304\344L\200\200\200\200\334\201\304\344L\200\200\200\200\344\201\304\344L\200\200\200\200\204\202\304\344L\200\200\200\200\214\202\304\344L\200\200\200\200\224\202\304\344L\200\200\200\200\234\202\304\344L\200\200\200\200\244\202\304\344L\200\200\200\200\254\202\304\344L\200\200\200\200\264\202\304\344L\200\200\200\200\274\202\304\344L\200\200\200\200\304\202\304\344L\200\200\200\200\314\202\304\344L\200\200\200\200\324\202\304\344L\200\200\200\200\334\202\304\344L\200\200\200\200\344\202\304\344L\200\200\200\200\354\202\304\344L\200\200\200\200\364\202\304\344L\200\200\200\200\374\202\304\344L\200\200\200\200\304\207\304\344L\200\200\200\200\324\207\304\344L\200\200\200\200\334\207\304\344L\200\200\200\200\344\207\304\344L\200\200\200\200\354\207\304\344L\200\200\200\200\364\207\304\344L\200\200\200\200\374\207\304\344L\200\200\200\200\204\210\304\344L\200\200\200\200\214\210\304\344L\200\200\200\200\224\210\304\344L\200\200\200\200\234\210\304\344L\200\200\200\200\244\210\304\344L\200\200\200\200\254\210\304\344L\200\200\200\200\274\210\304\344L\200\200\200\200\324\214\304\344L\200\200\200\200\334\214\304\344L\200\200\200\200\344\214\304\344L\200\200\200\200\374\214\304\344L\200\200\200\200\204\215\304\344L\200\200\200\200\214\215\304\344L\200\200\200\200\224\215\304\344L\200\200\200\200\234\215\304\344L\200\200\200\200\244\215\304\344L\200\200\200\200\254\215\304\344L\200\200\200\200\264\215\304\344L\200\200\200\200\274\215\304\344L\200\200\200\200\304\215\304\344L\200\200\200\200\314\215\304\344L\200\200\200\200\324\215\304\344L\200\200\200\200\334\215\304\344L\200\200\200\200\344\215\304\344L\200\200\200\200\354\215\304\344L\200\200\200\200\364\215\304\344L\200\200\200\200\374\215\304\344L\200\200\200\200\204\216\304\344L\200\200\200\200\214\216\304\344L\200\200\200\200\224\216\304\344L\200\200\200\200\234\216\304\344L\200\200\200\200\244\216\304\344L\200\200\200\200\254\216\304\344L\200\200\200\200\264\216\304\344L\200\200\200\200\274\216\304\344L\200\200\200\200\254\217\304\344L\022@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\031x\371\214\372\332\272F@!\261\211\314\\`cR\300"
+}
+unknown6 {
+  request_type: 6
+  unknown2 {
+  }
+}
+latitude: [Redacted]
+longitude: [Redacted]
+altitude: 8.0
+auth_info {
+  provider: "ptc"
+  token {
+    contents: "TGT-23885427-gPiTkX9K1g6BfazG333cbLuetCiP9snDIsGnWG4EeCSkzjkm32-sso.pokemon.com"
+    unknown2: 59
+  }
+}
+unknown12: 989
+
+304 [   rpc_api] [DEBUG] Execution of RPC
+307 [connectionpool] [ INFO] Starting new HTTPS connection (1): pgorelease.nianticlabs.com
+931 [connectionpool] [DEBUG] "POST /plfe/rpc HTTP/1.1" 200 None
+932 [   rpc_api] [DEBUG] Parsing main RPC response...
+932 [   rpc_api] [DEBUG] Protobuf structure of rpc response:
+status_code: 53
+request_id: 456160726639497601
+api_url: "pgorelease.nianticlabs.com/plfe/640"
+auth_ticket {
+  start: "\023\013\030\246\247H-K\0364\022\264\345\010\'\330\023?\2565\235\312\353\204\'\277\330\223\337\343@{\310L\254\350\265\330\230\032\000\000b\"\n\030\253\303\256\021\303\024U\223\002q.\230\246\216\003\014\200\364"
+  expire_timestamp_ms: 1471139126895
+  end: "\3643\025>\246\376\264\2728\000w\240\322\037\027\201"
+}
+returns: ""
+returns: ""
+
+944 [   rpc_api] [DEBUG] Decode raw over protoc (protoc has to be in your PATH):
+1: 53
+2: 456160726639497601
+3: "pgorelease.nianticlabs.com/plfe/640"
+7 {
+  1: "\023\013\030\246\247H-K\0364\022\264\345\010\'\330\023?\2565\235\312\353\204\'\277\330\223\337\343@{\310L\254\350\265\330\230\032\000\000b\"\n\030\253\303\256\021\303\024U\223\002q.\230\246\216\003\014\200\364"
+  2: 1471139126895
+  3: "\3643\025>\246\376\264\2728\000w\240\322\037\027\201"
+}
+100: ""
+100: ""
+
+944 [   rpc_api] [DEBUG] Parsing sub RPC responses...
+944 [    pgoapi] [ INFO] API Endpoint redirect... re-execution of call
+945 [   rpc_api] [DEBUG] Generating main RPC request...
+945 [   rpc_api] [DEBUG] Incremented RPC Request ID: 456160726639497602
+945 [   rpc_api] [DEBUG] Generating sub RPC requests...
+945 [   rpc_api] [DEBUG] Subrequest class: POGOProtos.Networking.Requests.Messages_pb2.GetMapObjectsMessage
+945 [   rpc_api] [DEBUG] Found list: since_timestamp_ms - trying as repeated
+945 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+946 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+947 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+948 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+949 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+950 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+951 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+952 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+953 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+953 [   rpc_api] [DEBUG] since_timestamp_ms -> 0
+953 [   rpc_api] [DEBUG] Found list: cell_id - trying as repeated
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+953 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+954 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+955 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+956 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+957 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+958 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+959 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+960 [   rpc_api] [DEBUG] cell_id -> [Redacted]
+960 [   rpc_api] [DEBUG] No Session Ticket found - using OAUTH Access Token
+960 [      auth] [DEBUG] Access Token still valid for further 02:57:59 hours (1471137447 < 1471148126)
+960 [  auth_ptc] [DEBUG] Using cached PTC Access Token
+961 [   rpc_api] [DEBUG] Generated protobuf request: 
+status_code: 2
+request_id: 456160726639497602
+requests {
+  request_type: GET_MAP_OBJECTS
+  request_message: "\n\300\004\200\200\200\200\304\201\304\344L\200\200\200\200\314\201\304\344L\200\200\200\200\324\201\304\344L\200\200\200\200\334\201\304\344L\200\200\200\200\344\201\304\344L\200\200\200\200\204\202\304\344L\200\200\200\200\214\202\304\344L\200\200\200\200\224\202\304\344L\200\200\200\200\234\202\304\344L\200\200\200\200\244\202\304\344L\200\200\200\200\254\202\304\344L\200\200\200\200\264\202\304\344L\200\200\200\200\274\202\304\344L\200\200\200\200\304\202\304\344L\200\200\200\200\314\202\304\344L\200\200\200\200\324\202\304\344L\200\200\200\200\334\202\304\344L\200\200\200\200\344\202\304\344L\200\200\200\200\354\202\304\344L\200\200\200\200\364\202\304\344L\200\200\200\200\374\202\304\344L\200\200\200\200\304\207\304\344L\200\200\200\200\324\207\304\344L\200\200\200\200\334\207\304\344L\200\200\200\200\344\207\304\344L\200\200\200\200\354\207\304\344L\200\200\200\200\364\207\304\344L\200\200\200\200\374\207\304\344L\200\200\200\200\204\210\304\344L\200\200\200\200\214\210\304\344L\200\200\200\200\224\210\304\344L\200\200\200\200\234\210\304\344L\200\200\200\200\244\210\304\344L\200\200\200\200\254\210\304\344L\200\200\200\200\274\210\304\344L\200\200\200\200\324\214\304\344L\200\200\200\200\334\214\304\344L\200\200\200\200\344\214\304\344L\200\200\200\200\374\214\304\344L\200\200\200\200\204\215\304\344L\200\200\200\200\214\215\304\344L\200\200\200\200\224\215\304\344L\200\200\200\200\234\215\304\344L\200\200\200\200\244\215\304\344L\200\200\200\200\254\215\304\344L\200\200\200\200\264\215\304\344L\200\200\200\200\274\215\304\344L\200\200\200\200\304\215\304\344L\200\200\200\200\314\215\304\344L\200\200\200\200\324\215\304\344L\200\200\200\200\334\215\304\344L\200\200\200\200\344\215\304\344L\200\200\200\200\354\215\304\344L\200\200\200\200\364\215\304\344L\200\200\200\200\374\215\304\344L\200\200\200\200\204\216\304\344L\200\200\200\200\214\216\304\344L\200\200\200\200\224\216\304\344L\200\200\200\200\234\216\304\344L\200\200\200\200\244\216\304\344L\200\200\200\200\254\216\304\344L\200\200\200\200\264\216\304\344L\200\200\200\200\274\216\304\344L\200\200\200\200\254\217\304\344L\022@\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\000\031x\371\214\372\332\272F@!\261\211\314\\`cR\300"
+}
+unknown6 {
+  request_type: 6
+  unknown2 {
+  }
+}
+latitude: [Redacted]
+longitude: [Redacted]
+altitude: 8.0
+auth_info {
+  provider: "ptc"
+  token {
+    contents: "TGT-23885427-gPiTkX9K1g6BfazG333cbLuetCiP9snDIsGnWG4EeCSkzjkm32-sso.pokemon.com"
+    unknown2: 59
+  }
+}
+unknown12: 989
+
+961 [   rpc_api] [DEBUG] Execution of RPC
+282 [connectionpool] [DEBUG] "POST /plfe/640/rpc HTTP/1.1" 200 None
+286 [   rpc_api] [DEBUG] Parsing main RPC response...
+287 [   rpc_api] [DEBUG] Protobuf structure of rpc response:
+status_code: 3
+request_id: 456160726639497602
+unknown6 {
+  response_type: 6
+  unknown2 {
+    unknown1: 1
+  }
+}
+auth_ticket {
+  start: "g\325F)\322\026\200r\3126\246j\022\224\303\3230g\253N\302\243\3370\241\205[\026\254\355BY\304y\312\312p\253\343\264\030\n=3\3130N\005\204\363\264\225\030\264U_\261\237\240\270\266K\340\377"
+  expire_timestamp_ms: 1471139127244
+  end: "I\014\240\267\372\230?\363\317\320h\377(\351Gz"
+}
+returns: ""
+
+308 [   rpc_api] [DEBUG] Decode raw over protoc (protoc has to be in your PATH):
+1: 3
+2: 456160726639497602
+6 {
+  1: 6
+  2 {
+    1: 1
+  }
+}
+7 {
+  1: "g\325F)\322\026\200r\3126\246j\022\224\303\3230g\253N\302\243\3370\241\205[\026\254\355BY\304y\312\312p\253\343\264\030\n=3\3130N\005\204\363\264\225\030\264U_\261\237\240\270\266K\340\377"
+  2: 1471139127244
+  3: "I\014\240\267\372\230?\363\317\320h\377(\351Gz"
+}
+100: ""
+
+309 [   rpc_api] [DEBUG] Parsing sub RPC responses...
+309 [   rpc_api] [DEBUG] Parsing class: POGOProtos.Networking.Responses_pb2.GetMapObjectsResponse
+344 [   rpc_api] [DEBUG] Received Session Ticket valid for 00:29:59 hours (1471137327345 < 1471139127244)
+345 [    pgoapi] [ INFO] Cleanup of request!
+Response dictionary (get_player): 
+{   'auth_ticket': {   'end': 'SQygt/qYP/PP0Gj/KOlHeg==',
+                       'expire_timestamp_ms': 1471139127244L,
+                       'start': 'Z9VGKdIWgHLKNqZqEpTD0zBnq07Co98woYVbFqztQlnEecrKcKvjtBgKPTPLME4FhPO0lRi0VV+xn6C4tkvg/w=='},
+    'request_id': 456160726639497602L,
+    'responses': {   'GET_MAP_OBJECTS': {   }},
+    'status_code': 3,
+    'unknown6': [{   'response_type': 6, 'unknown2': {   'unknown1': 1L}}]}
